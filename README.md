@@ -5,7 +5,7 @@ This repository documents a project aimed at revolutionizing urban water managem
 
 ## Project Overview
 
-Urban water distribution systems face significant inefficiencies—up to 25% of the water distributed is wasted. This project targets a 70% reduction in water wastage, decreasing the loss from 2.337 billion cubic meters per year to 0.701 billion cubic meters per year.
+Urban water distribution systems in Egypt currently suffer from significant inefficiencies, with 58.17% of distributed water lost annually—equating to approximately 21 billion cubic meters of water (Pardo & Tekinerdogan, 2023). The ideal target is to reduce this loss to 8%, or 2.88 billion cubic meters per year, based on a total distribution volume of 36.1 billion cubic meters. This project aims to close the 18.12 billion m³/year gap between the current and ideal states by achieving a 50.17% reduction in water loss, bringing Egypt in line with international standards of water efficiency.
 
 ### Key Objectives
 
@@ -73,6 +73,26 @@ A detailed 5-Why Analysis identified:
 
 - **Water Leak Dataset:** Available on [Kaggle](https://www.kaggle.com/datasets/ziya07/water-leak-dataset).
 
+## Prerequisites:
+### 1  Clone the repository
+git clone https://github.com/CSCN8040-Water-Wastage-in-Urban-Areas/Reducing-Water-Wastage-in-Urban-Areas.git
+cd Reducing-Water-Wastage-in-Urban-Areas
+
+### 2  Install the required libraries
+python -m pip install --upgrade pip
+pip install pandas numpy scipy matplotlib seaborn scikit-learn imbalanced-learn jupyterlab
+
+### 3.Launch JupyterLab:
+jupyter lab
+### 4.Navigate to the notebook
+In the left sidebar, double-click Reducing_Water_Wastage.ipynb
+### 5.Run the entire notebook
+Menu → Run ► Run All Cells
+### The notebook will:
+- load water_leak_detection_1000_rows.csv
+- generate the correlation heat‑map, leak/burst bar‑plots, and the three box‑plots
+- execute the T‑test, Wilcoxon test and Spearman correlation and print the p‑values
+
 ## References
 
 1. Picazo, M. Á. P., & Tekinerdogan, B. (2024). *Urban water distribution networks: Challenges and solution directions.* [DOI](https://doi.org/10.1016/b978-0-323-99330-2.00005-2)
@@ -84,5 +104,3 @@ A detailed 5-Why Analysis identified:
 This repository includes project documents, analysis reports, and data files. For more detailed insights into the project methodology and results, please refer to the project documentation.
 
 ---
-
-*This project is developed as part of an academic assignment and serves as a practical application of lean management and AI technologies in urban water management.*
